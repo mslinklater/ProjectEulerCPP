@@ -39,6 +39,30 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Problem 4",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/problem4",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Problem 5",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/problem5",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]

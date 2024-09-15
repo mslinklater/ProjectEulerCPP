@@ -23,3 +23,18 @@ std::vector<T> PrimeFactors(T n)
     factors.push_back(n);
     return factors;
 }
+
+template<typename T>
+bool IsPalindrome(T num)
+{
+    static_assert(std::is_integral_v<T>);   // only for integral types
+
+    std::string str = std::to_string(num);
+    int len = str.length();
+    for(int i = 0 ; i < len ; ++i)
+    {
+        if(str[i] != str[len - i - 1])
+            return false;
+    }
+    return true;
+}

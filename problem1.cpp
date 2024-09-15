@@ -11,6 +11,9 @@ int main(int argc, const char * argv[]) {
 
     for (int i = 0 ; i < 1000 ; i++)
     {
+        /*
+        If the number is divisible by 3 or 5, add it to the sum
+        */
         if (((i % 3) == 0) || ((i % 5) == 0))
         {
             sum += i;
