@@ -69,3 +69,40 @@ std::map<T, int> CountElements(const std::vector<T>& input)
     }
     return ret;
 }
+
+template<typename T>
+T SumOfSquares(T count)
+{
+    T answer = 0;
+    for(T i=0 ; i<=count ;++i)
+    {
+        answer += i * i;
+    }
+    return answer;
+}
+
+template<typename T>
+T Sum(T count)
+{
+/* Simple geometric reasoning... sum is half the area of a rect with sides n, n+1
+
+eg 5 - half a rect of 5x6
+
+*.....
+**....
+***...
+****..
+*****.
+
+answer - 15
+
+*/
+
+    return (count * (count+1)) / 2;
+}
+
+template<typename T>
+bool IsPrime(T number)
+{
+    return PrimeFactors<T>(number).size() == 1;
+}

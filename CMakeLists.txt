@@ -3,8 +3,11 @@ project(projecteuler LANGUAGES CXX)
 
 add_compile_options(-std=c++20)
 
-add_executable(problem1 problem1.cpp)
-add_executable(problem2 problem2.cpp)
-add_executable(problem3 problem3.cpp)
-add_executable(problem4 problem4.cpp)
-add_executable(problem5 problem5.cpp)
+add_executable(projecteuler main.cpp 
+                            problem1.cpp
+                            problem2.cpp
+                            problem3.cpp
+                            problem4.cpp
+                            problem5.cpp
+                            problem6.cpp
+                            problem7.cpp)

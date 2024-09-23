@@ -4,22 +4,18 @@
 //
 // Find the sum of all the multiples of 1000 or below.
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Problem 1\n";
-
+int Problem1(int input)
+{
     uint32_t sum = 0;
 
-    for (int i = 0 ; i < 1000 ; i++)
+    for (int i = 0 ; i < input ; i++)
     {
-        /*
-        If the number is divisible by 3 or 5, add it to the sum
-        */
+        // If the number is divisible by 3 or 5, add it to the sum
         if (((i % 3) == 0) || ((i % 5) == 0))
         {
             sum += i;
         }
     }
 
-    std::cout << "The answer is " << sum << "\n";
-    return 0;
+    return sum;
 }

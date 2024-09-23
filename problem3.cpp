@@ -7,10 +7,8 @@
 Find the largest prime factor of 600851475143
 */
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Problem 3 - Largest Prime Factor\n";
-
-    std::vector<uint64_t> factors = PrimeFactors<uint64_t>(600851475143);
+int Problem3(uint64_t input) {
+    std::vector<uint64_t> factors = PrimeFactors<uint64_t>(input);
 
     uint64_t answer = 0;
     for(auto factor : factors)
@@ -18,6 +16,5 @@ int main(int argc, const char * argv[]) {
         answer = std::max(answer, factor);
     }
 
-    std::cout << "The answer is " << answer << "\n";
-    return 0;
+    return answer;
 }

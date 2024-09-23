@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Main",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/projecteuler",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
             "name": "Problem 1",
             "type": "cppdbg",
             "request": "launch",
@@ -57,6 +69,30 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/problem5",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Problem 6",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/problem6",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Problem 7",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/problem7",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

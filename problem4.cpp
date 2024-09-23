@@ -8,13 +8,12 @@ Find the largest prime factor of 600851475143
 */
 
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Problem 4 - Largest palindrome from product of 2 3 digit numbers\n";
-
+int Problem4(int input)
+{
     int answer = 0;
-    for (int x = 0 ; x < 1000 ; ++x)
+    for (int x = 0 ; x <= input ; ++x)
     {
-        for (int y = 0 ; y < 1000 ; ++y)
+        for (int y = 0 ; y <= input ; ++y)
         {
             int num = x * y;
             if(num > answer)
@@ -27,6 +26,5 @@ int main(int argc, const char * argv[]) {
         }
     }
 
-    std::cout << "The answer is " << answer << "\n";
-    return 0;
+    return answer;
 }

@@ -1,19 +1,16 @@
-#include <iostream>
-
+#include <cstdint>
 /*
 
 Find the sum of the even Fibonacci numbers less than 4,000,000
 
 */
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Problem 2\n";
-
+int Problem2(int input) {
     uint64_t prev = 1;
     uint64_t curr = 2;
     uint64_t sum = 2;
 
-    while (curr < 4000000)
+    while (curr < input)
     {
         uint64_t next = prev + curr;
         prev = curr;
@@ -24,6 +21,5 @@ int main(int argc, const char * argv[]) {
         }
     }
 
-    std::cout << "The answer is " << sum << "\n";
-    return 0;
+    return sum;
 }
