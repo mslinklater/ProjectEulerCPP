@@ -6,7 +6,8 @@
 
 #include "problems.h"
 
-void PrintAnswer(int problem, int answer)
+template<typename T>
+void PrintAnswer(int problem, T answer)
 {
     std::cout << "The answer to problem " << problem << " is " << answer << std::endl;
 }
@@ -14,8 +15,28 @@ void PrintAnswer(int problem, int answer)
 int main(int argc, const char * argv[]) {
 
     bool testAll = false;
-    int problemNumber = 7;
+    int problemNumber = 0;
 
+    // If parameter is provided, use it to select problem to run
+    if(argc > 1)
+    {
+        std::string arg1 = argv[1];
+        if(arg1 == "all")
+        {
+            testAll = true;
+        }
+        else
+        {
+            problemNumber = std::stoi(arg1);
+        }
+    }
+
+    if((problemNumber == 0) || testAll)
+    {
+        assert(Problem0(5) == 35);
+        uint64_t answer = Problem0(525000);
+        PrintAnswer(0, answer);
+    }
     if((problemNumber == 1) || testAll)
     {
         int answer = Problem1(1000);
