@@ -1,3 +1,4 @@
+extern uint64_t Problem0(int input);
 extern int Problem1(int input);
 extern int Problem2(int input);
 extern int Problem3(uint64_t input);
