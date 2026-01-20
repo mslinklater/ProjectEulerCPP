@@ -99,6 +99,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Problem 8",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/problem8",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]

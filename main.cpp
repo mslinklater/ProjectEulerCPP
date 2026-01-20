@@ -4,17 +4,20 @@
 #include <cassert>
 #include <iostream>
 
+#include <string>
+
 #include "problems.h"
 
-void PrintAnswer(int problem, int answer)
+template<typename T>
+void PrintAnswer(int problem, T answer)
 {
     std::cout << "The answer to problem " << problem << " is " << answer << std::endl;
 }
 
 int main(int argc, const char * argv[]) {
 
-    bool testAll = false;
-    int problemNumber = 7;
+    bool testAll = true;
+    int problemNumber = 8;
 
     if((problemNumber == 1) || testAll)
     {
@@ -71,5 +74,13 @@ int main(int argc, const char * argv[]) {
         PrintAnswer(7, answer);
     }
 
+    if((problemNumber == 8) || testAll)
+    {
+        uint64_t testanswer = Problem8(4);
+        assert(testanswer == 5832);
+        uint64_t answer = Problem8(13);
+        assert(answer == 23514624000);
+        PrintAnswer(8, answer);
+    }
     return 0;
 }

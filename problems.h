@@ -5,3 +5,4 @@ extern int Problem4(int input);
 extern int Problem5(int input);
 extern int Problem6(int input);
 extern int Problem7(int input);
+extern uint64_t Problem8(int input);
