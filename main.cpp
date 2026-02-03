@@ -17,7 +17,7 @@ void PrintAnswer(int problem, T answer)
 int main(int argc, const char * argv[]) {
 
     bool testAll = false;
-    int problemNumber = 0;
+    int problemNumber = 10;
 
     // If parameter is provided, use it to select problem to run
     if(argc > 1)
@@ -101,6 +101,14 @@ int main(int argc, const char * argv[]) {
         uint64_t answer = Problem8(13);
         assert(answer == 23514624000);
         PrintAnswer(8, answer);
+    }
+    if((problemNumber == 10) || testAll)
+    {
+        uint64_t testanswer = Problem10(10);
+        assert(testanswer == 17);
+        uint64_t answer = Problem10(2000000);
+        assert(answer == 142913828922);
+        PrintAnswer(10, answer);
     }
     return 0;
 }

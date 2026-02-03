@@ -12,4 +12,6 @@ add_executable(projecteuler main.cpp
                             problem5.cpp
                             problem6.cpp
                             problem7.cpp
-                            problem8.cpp)
+                            problem8.cpp
+                            problem10.cpp
+                            problem11.cpp)
